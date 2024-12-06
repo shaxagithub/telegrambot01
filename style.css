@@ -1,0 +1,79 @@
+/* Umumiy stil */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #4c4cfc, #6ee7ff);
+}
+
+/* Formani markazlashtirish */
+.form {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    width: 350px;
+    text-align: center;
+}
+
+/* Input va textarea */
+.form input[type="text"],
+.form input[type="email"],
+.form textarea {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: 0.3s ease;
+}
+
+/* Fokus effekti */
+.form input[type="text"]:focus,
+.form input[type="email"]:focus,
+.form textarea:focus {
+    border-color: #4c4cfc;
+    outline: none;
+    box-shadow: 0 0 8px rgba(76, 76, 252, 0.4);
+}
+
+/* Tugma stili */
+.form input[type="submit"] {
+    background: #4c4cfc;
+    color: #ffffff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+/* Hover effekti tugma uchun */
+.form input[type="submit"]:hover {
+    background: #6ee7ff;
+    box-shadow: 0 4px 15px rgba(110, 231, 255, 0.4);
+}
+
+/* Placeholder ranglari */
+.form input::placeholder,
+.form textarea::placeholder {
+    color: #aaa;
+}
+
+/* Media query - kichik ekranlar uchun */
+@media (max-width: 480px) {
+    .form {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .form textarea {
+        height: 100px;
+    }
+}
